@@ -1,4 +1,6 @@
-.title {
-  font-size: 5rem; }
+body header h1 {
+  font-size: 4rem; }
+body .affichage {
+  max-width: 50vw; }
 
 /*# sourceMappingURL=style.css.map */

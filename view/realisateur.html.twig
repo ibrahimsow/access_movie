@@ -1,11 +1,13 @@
 
  {% extends 'index.html.twig' %} 
- {% block realisateurs %}
  
-{% for realisateurs in realisateurs %}
-    {{realisateurs.nom}}
-{% endfor %}
-  
- 
+ {% block content %}
+
+    {% for realisateur in realisateurs %}
+        <div>
+            <h1>{{realisateur.nom}}</h1>
+        </div>
+
+    {% endfor %}
  
  {% endblock %}

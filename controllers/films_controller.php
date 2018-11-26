@@ -35,6 +35,6 @@ function showList(){
     
 
     $template = $twig->load('film.html.twig');
-    echo $template->render( array( 'title'=>'Liste des films', 'films' => $films ) );
+    echo $template->render( array( 'title'=>'Liste des Films', 'films' => $films ) );
 
 }

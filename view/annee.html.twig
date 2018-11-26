@@ -1,11 +1,13 @@
 
  {% extends 'index.html.twig' %} 
- {% block annees %}
- 
-{% for annees in annees %}
-    {{annees.annee}}
-{% endfor %}
-  
- 
+
+ {% block content %}
+
+    {% for annees in annees %}
+        <div>
+            <h1>{{annees.annee}}</h1>
+        </div>
+
+    {% endfor %}
  
  {% endblock %}

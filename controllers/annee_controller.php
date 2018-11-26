@@ -36,7 +36,7 @@ function showList(){
     
 
     $template = $twig->load('annee.html.twig');
-    echo $template->render(array('annees' => $result));
+    echo $template->render(array('title'=>'Liste des Années','annees' => $result));
 
 
 }

@@ -1,65 +1,14 @@
 
  {% extends 'index.html.twig' %} 
 
-  {# Action #}
-{% block genre1 %}
-{% for genre in genre %}
-    {{genre.type}}
-{% endfor %}
+ {% block content %}
+
+    {% for genre in genre %}
+        <div>
+            <h1>{{genre.type}}</h1>
+        </div>
+
+    {% endfor %}
+
 {% endblock %}
 
-  {# Animation #}
-{% block genre2 %}
-{% for genre in genre2 %}
-    {{genre.type}}
-{% endfor %}
-{% endblock %}
-
-  {# Art martiaux #}
-{% block genre3 %}
-{% for genre in genre3 %}
-    {{genre.type}}
-{% endfor %}
-{% endblock %}
-
-  {# Aventure #}
-{% block genre4 %}
-{% for genre in genre4 %}
-    {{genre.type}}
-{% endfor %}
-{% endblock %}
-
-  {# Biopic #}
-{% block genre5 %}
-{% for genre in genre5 %}
-    {{genre.type}}
-{% endfor %}
-{% endblock %}
-
-  {# Bollywood #}
-{% block genre6 %}
-{% for genre in genre6 %}
-    {{genre.type}}
-{% endfor %}
-{% endblock %}
-
-  {# Drame #}
-{% block genre7 %}
-{% for genre in genre7 %}
-    {{genre.type}}
-{% endfor %}
-{% endblock %}
-
-  {# Romance #}
-{% block genre8 %}
-{% for genre in genre8 %}
-    {{genre.type}}
-{% endfor %}
-{% endblock %}
-
-  {# Famille #}
-{% block genre9 %}
-{% for genre in genre9 %}
-    {{genre.type}}
-{% endfor %}
-{% endblock %}
