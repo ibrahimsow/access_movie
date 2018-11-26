@@ -24,6 +24,10 @@ body {
   body header h2 {
     color: #ffffff9c;
     margin: 5vh; }
+  body header hr {
+    height: 2px;
+    width: 100px;
+    color: #ffffff9c; }
   body .affichage {
     max-width: 40vw;
     color: #ffffff9c;
