@@ -18,20 +18,34 @@ body {
     font-family: "Font Awesome 5 Free";
     color: #ffffffa1; }
   body header h1 {
-    font-size: 4rem;
-    margin: 10vh;
-    color: #ffffff9c; }
+    font-size: 5rem;
+    margin-top: 15vh;
+    color: #8a0000;
+    text-transform: uppercase;
+    font-weight: bold; }
+    body header h1 .access {
+      color: #ffffffb5; }
   body header h2 {
     color: #ffffff9c;
     margin: 5vh; }
   body header hr {
-    height: 2px;
-    width: 100px;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 3.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 20vw;
     color: #ffffff9c; }
   body .affichage {
     max-width: 40vw;
     color: #ffffff9c;
     margin-bottom: 10vh;
     height: 250vh; }
+    body .affichage .contenue {
+      padding: 20px 0px;
+      margin-bottom: 2em;
+      border-bottom: solid 1px #ffffff2b; }
 
 /*# sourceMappingURL=style.css.map */

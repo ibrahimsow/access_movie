@@ -25,18 +25,29 @@ body{
     }
     header{
         h1{
-            font-size: 4rem;
-            margin: 10vh;
-            color:#ffffff9c
+            font-size: 5rem;
+            margin-top: 15vh;
+            color:#8a0000;
+            text-transform: uppercase;
+            font-weight: bold;
+            .access{
+                color: #ffffffb5;
+            }
         }
         h2{
             color:#ffffff9c;
             margin: 5vh;
         }
-        hr{
-            height: 2px;
-            width: 100px;
-            color: #ffffff9c;
+        hr { 
+            display: block;
+            margin-top: 0.5em;
+            margin-bottom: 3.5em;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: inset;
+            border-width: 1px;
+            width: 20vw;
+            color:#ffffff9c;
         }
     }
     .affichage{
@@ -44,6 +55,11 @@ body{
         color:#ffffff9c;
         margin-bottom: 10vh;
         height: 250vh;
+        .contenue {
+            padding: 20px 0px;
+            margin-bottom: 2em;
+            border-bottom: solid 1px #ffffff2b;
+        }
     }
 
 
