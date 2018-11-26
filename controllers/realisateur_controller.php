@@ -36,7 +36,7 @@ function showList(){
     
 
     $template = $twig->load('realisateur.html.twig');
-    echo $template->render(array('title'=>'Liste des Réalisateurs','realisateurs' => $result));
+    echo $template->render(array('title'=>'Tous les Réalisateurs','realisateurs' => $result));
 
 
 }

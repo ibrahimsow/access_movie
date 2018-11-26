@@ -1,6 +1,33 @@
-body header h1 {
-  font-size: 4rem; }
-body .affichage {
-  max-width: 50vw; }
+body {
+  background: linear-gradient(black, #420000); }
+  body .container-fluid {
+    width: 100%;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto; }
+  body .bg-light {
+    background-color: #040404eb !important;
+    box-shadow: 0px 10px 40px #00000091; }
+  body .navbar-light .navbar-nav .nav-link {
+    color: #ffffffab;
+    font-size: 20px;
+    margin: 0px 20px; }
+    body .navbar-light .navbar-nav .nav-link:hover {
+      color: #84848491; }
+  body .fa, body .far, body .fas {
+    font-family: "Font Awesome 5 Free";
+    color: #ffffffa1; }
+  body header h1 {
+    font-size: 4rem;
+    margin: 10vh;
+    color: #ffffff9c; }
+  body header h2 {
+    color: #ffffff9c;
+    margin: 5vh; }
+  body .affichage {
+    max-width: 40vw;
+    color: #ffffff9c;
+    margin-bottom: 10vh;
+    height: 250vh; }
 
 /*# sourceMappingURL=style.css.map */
