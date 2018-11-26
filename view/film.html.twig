@@ -1,0 +1,22 @@
+{% extends 'index.html.twig' %} 
+
+{% block content %}
+
+    {% for film in films %}
+        <div>
+            <h1>{{film.titre}}</h1>
+        </div>
+        <div>
+            <p>{{film.description}}</p>
+        </div>
+          <div>
+            <p>{{film.annee}}</p>
+        </div>
+            <div>
+            <p>{{film.realisateur}}</p>
+        </div>
+
+    {% endfor %}
+
+{%  endblock %}
+  
