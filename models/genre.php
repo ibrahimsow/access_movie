@@ -2,13 +2,12 @@
     require'models/connection_bdd.php';
 
 
-    function listeannee(){
+    function listeGenre(){
         global $basedonne;
-        $requete = $basedonne->prepare("SELECT films.annee FROM films GROUP BY annee ORDER BY annee DESC");
-
+        $sql = "SELECT g.id, g.type FROM genre AS g";
+        
+        $requete = $basedonne->prepare($sql);
         $requete->execute();
-    
         return $requete->fetchAll(PDO::FETCH_ASSOC);
         
     }
-    

@@ -13,6 +13,7 @@ $twig = new Twig_Environment($loader, array(
 
 
 require_once('models/annee.php');
+require_once('models/film.php');
 
 
 
@@ -20,10 +21,6 @@ switch ($action) {
     case 'list':
         showList();
         break;
-    
-    // default:
-    //     # code...
-    //     break;
 }
 
 
@@ -32,11 +29,10 @@ switch ($action) {
 
 function showList(){
     global $twig;
-    $result = liste();
+    $result = listeannee();
     
-
     $template = $twig->load('annee.html.twig');
-    echo $template->render(array('title'=>'Liste des Années','annees' => $result));
+    echo $template->render(array('title'=>'Toutes les années','annees' => $result));
 
 
 }

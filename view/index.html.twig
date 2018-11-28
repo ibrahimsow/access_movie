@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base href="{{baseurl}}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link  rel="stylesheet" type="text/css" href="style.css" />
@@ -28,10 +29,10 @@
                         <a class="m-1 nav-link" href="./realisateur">Realisateurs</a>
                         </li>
                         <li class="ml-1 mr-1 nav-item  d-flex justify-content-center align-items-center">
-                        <a class="m-1 nav-link" href="">Acteurs</a>
+                        <a class="m-1 nav-link" href="./acteur">Acteurs</a>
                         </li>
                         <li class="ml-1 mr-1 nav-item  d-flex justify-content-center align-items-center">
-                        <a class="m-1 nav-link" href="">Année</a>
+                        <a class="m-1 nav-link" href="./annee">Année</a>
                         </li>
                     </ul>
                 </div>
@@ -44,19 +45,8 @@
             </div>
             <hr>
         </header>
-            <section class="container-fluid justify-content-center affichage_genre row" >
-                <a href="./action">Action</a>
-                <a href="./animation">Animation</a>
-                <a href="./art_martiaux">Arts Martiaux</a>
-                <a href="./avanture">Aventure</a>
-                <a href="./biopic">Biopic</a>
-                <a href="./bollywood">Bollywood</a>
-                <a href="./drame">Drame</a>
-                <a href="./romance">Romance</a>
-                <a href="./famille">Famille</a>
-                <a href="./fiction">Science-fiction</a>
-
-            </section>
+                {% block menugenre %}
+                {% endblock %}
             <section class="container-fluid affichage" >
                 {% block content %}
                 {%  endblock %}

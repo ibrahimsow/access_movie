@@ -25,4 +25,13 @@
     {% endfor %}
 
 {%  endblock %}
+
+{% block menugenre %}
+            <section class="container-fluid justify-content-center affichage_genre row" >
+                {% for genre in genres %}
+                <a href="films/genre/{{genre.id}}">{{genre.type}}</a>
+                {% endfor %}
+
+            </section>
+{%  endblock %}
   
