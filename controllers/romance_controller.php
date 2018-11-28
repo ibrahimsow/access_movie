@@ -12,8 +12,7 @@ $twig = new Twig_Environment($loader, array(
 
 
 
-require_once('models/genre.php');
-
+require_once('models/romance.php');
 
 
 switch ($action) {
@@ -29,13 +28,11 @@ switch ($action) {
 
 
 
-
 function showList(){
     global $twig;
-    $result = genre();
+    $result = liste();
+
  
-    $template = $twig->load('genre.html.twig');
-    echo $template->render(array('title'=>'Liste des Genres','genre' => $result));
-
-
+    $template = $twig->load('romance.html.twig');
+    echo $template->render(array('title'=>"Film de Romance",'romance' => $result));
 }

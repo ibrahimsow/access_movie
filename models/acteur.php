@@ -2,14 +2,12 @@
     $basedonne = new PDO("mysql:host=127.0.0.1;dbname=annuaire_film; charset=utf8", "root", "online@2017");
 
 
-    function genre(){
+    function liste(){
         global $basedonne;
-        $requete = $basedonne->prepare("SELECT genre.type FROM `genre`");
+        $requete = $basedonne->prepare("SELECT acteur.acteur FROM acteur");
 
         $requete->execute();
     
         return $requete->fetchAll(PDO::FETCH_ASSOC);
         
     }
-
-

@@ -4,7 +4,7 @@
 
     function liste(){
         global $basedonne;
-        $requete = $basedonne->prepare("SELECT annees.annee FROM `annees`");
+        $requete = $basedonne->prepare("SELECT films.annee FROM films GROUP BY annee ORDER BY annee DESC");
 
         $requete->execute();
     

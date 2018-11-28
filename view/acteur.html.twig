@@ -1,0 +1,15 @@
+{% extends 'index.html.twig' %} 
+ 
+ {% block content %}
+
+    {% for acteur in acteur %}
+    <section class="contenue_realisateur">
+        <div>
+            <a href="#"><h1>{{acteur.acteur}}</h1></a>
+            
+        </div>
+    </section>
+
+    {% endfor %}
+ 
+ {% endblock %}

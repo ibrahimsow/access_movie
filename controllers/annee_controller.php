@@ -20,10 +20,7 @@ switch ($action) {
     case 'list':
         showList();
         break;
-    
-    // default:
-    //     # code...
-    //     break;
+
 }
 
 

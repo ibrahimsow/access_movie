@@ -4,7 +4,7 @@
 
     function liste(){
         global $basedonne;
-        $requete = $basedonne->prepare("SELECT realisateurs.nom FROM realisateurs");
+        $requete = $basedonne->prepare("SELECT realisateur.realisateur FROM realisateur");
 
         $requete->execute();
     

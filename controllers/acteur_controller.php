@@ -12,13 +12,15 @@ $twig = new Twig_Environment($loader, array(
 
 
 
-require_once('models/film1.php');
+require_once('models/acteur.php');
+
 
 
 switch ($action) {
     case 'list':
         showList();
         break;
+    
     // default:
     //     # code...
     //     break;
@@ -30,12 +32,11 @@ switch ($action) {
 
 function showList(){
     global $twig;
-    $films = liste();
+    $result = liste();
     
 
-    $template = $twig->load('film.html.twig');
-    echo $template->render( array('title'=>'Tous les Films', 'films' => $films ) );
+    $template = $twig->load('acteur.html.twig');
+    echo $template->render(array('title'=>'Tous les Acteurs','acteur' => $result));
+
 
 }
-
-
