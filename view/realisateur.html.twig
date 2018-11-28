@@ -4,9 +4,12 @@
  {% block content %}
 
     {% for realisateur in realisateurs %}
+    <section class="contenue_realisateur">
         <div>
-            <h1>{{realisateur.nom}}</h1>
+            <a href="#"><h1>{{realisateur.realisateur}}</h1></a>
+            
         </div>
+    </section>
 
     {% endfor %}
  

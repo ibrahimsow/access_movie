@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(black, #420000); }
+  background: #6d0000; }
   body .container-fluid {
     width: 100%;
     padding: 0;
@@ -7,7 +7,7 @@ body {
     margin-left: auto; }
   body .bg-light {
     background-color: #040404 !important;
-    box-shadow: 0px 10px 40px #00000091; }
+    box-shadow: 0px 7px 30px #0000008a; }
   body .navbar-light .navbar-nav .nav-link {
     color: #ffffffab;
     font-size: 20px;
@@ -17,35 +17,83 @@ body {
   body .fa, body .far, body .fas {
     font-family: "Font Awesome 5 Free";
     color: #ffffffa1; }
-  body header h1 {
+  body header .title .icone {
+    position: relative;
+    top: -5vh;
+    color: #ffffffc7;
+    font-size: 3rem;
+    transform: rotate(15deg);
+    text-shadow: 58px -15px 78px #92ddff;
+    animation: cam 5s infinite; }
+@keyframes cam {
+  0% {
+    transform: rotate(15deg); }
+  25% {
+    transform: rotate(30deg); }
+  50% {
+    transform: rotate(15deg); }
+  75% {
+    transform: rotate(30deg); }
+  100% {
+    transform: rotate(15deg); } }
+  body header .title h1 {
     font-size: 5rem;
     margin-top: 15vh;
-    color: #8a0000;
+    color: #040404eb;
     text-transform: uppercase;
-    font-weight: bold; }
-    body header h1 .access {
+    font-weight: bold;
+    text-shadow: 5px 29px 22px #00000030; }
+    body header .title h1 .access {
       color: #ffffffb5; }
-  body header h2 {
-    color: #ffffff9c;
-    margin: 5vh; }
+  body header .title h2 {
+    color: #d4d4d4eb;
+    margin: 5vh;
+    text-shadow: 5px 9px 12px #00000030; }
   body header hr {
     display: block;
     margin-top: 0.5em;
-    margin-bottom: 3.5em;
+    margin-bottom: 8em;
     margin-left: auto;
     margin-right: auto;
     border-style: inset;
     border-width: 1px;
     width: 20vw;
     color: #ffffff9c; }
+  body .affichage_genre {
+    position: absolute;
+    top: 50vh; }
+    body .affichage_genre a {
+      font-size: 1.5rem !important;
+      margin: 0px 20px;
+      color: #ffffffb5;
+      text-decoration: none;
+      margin-bottom: 2em; }
+      body .affichage_genre a:hover {
+        color: black; }
   body .affichage {
-    max-width: 40vw;
-    color: #ffffff9c;
-    margin-bottom: 10vh;
-    height: 250vh; }
+    max-width: 60vw;
+    color: #d4d4d4eb;
+    margin-bottom: 10vh; }
+    body .affichage .image img {
+      height: 250px;
+      width: auto; }
     body .affichage .contenue {
-      padding: 20px 0px;
+      height: 250px;
+      padding: 21px 45px;
       margin-bottom: 2em;
-      border-bottom: solid 1px #ffffff2b; }
+      box-shadow: 10px 2px 62px #ff202047;
+      background-color: #350000fa; }
+      body .affichage .contenue h1 {
+        font-size: 2rem; }
+    body .affichage .contenue_realisateur {
+      padding: 21px 45px;
+      margin-bottom: 2em;
+      box-shadow: 10px 2px 62px #ff202047;
+      background-color: #350000fa; }
+      body .affichage .contenue_realisateur a {
+        text-decoration: none;
+        color: #ffffffb5; }
+      body .affichage .contenue_realisateur h1 {
+        font-size: 2rem; }
 
 /*# sourceMappingURL=style.css.map */

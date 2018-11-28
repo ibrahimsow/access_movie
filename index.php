@@ -13,9 +13,46 @@ switch ($controller) {
         require_once("controllers/films_controller.php");
         break;
 
-        case 'genre':
-        require_once("controllers/genre_controller.php");
+        case 'action':
+        require_once("controllers/action_controller.php");
         break;
+        
+        case 'animation':
+        require_once("controllers/animation_controller.php");
+        break;
+        
+        case 'art_martiaux':
+        require_once("controllers/art_martiaux_controller.php");
+        break;
+
+        case 'avanture':
+        require_once("controllers/avanture_controller.php");
+        break;
+        
+        case 'biopic':
+        require_once("controllers/biopic_controller.php");
+        break;
+
+        case 'bollywood':
+        require_once("controllers/bollywood_controller.php");
+        break;
+
+        case 'drame':
+        require_once("controllers/drame_controller.php");
+        break;
+
+        case 'famille':
+        require_once("controllers/famille_controller.php");
+        break;
+
+        case 'fiction':
+        require_once("controllers/fiction_controller.php");
+        break;
+
+        case 'romance':
+        require_once("controllers/romance_controller.php");
+        break;
+
         case 'realisateur':
         require_once("controllers/realisateur_controller.php");
         break;
