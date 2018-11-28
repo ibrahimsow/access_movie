@@ -4,7 +4,7 @@
 
     function liste(){
         global $basedonne;
-        $sql = "SELECT films.titre, films.description, films.annee, films.realisateur 
+        $sql = "SELECT films.titre, films.description, films.annee
                 FROM `films`";
         
         $requete = $basedonne->prepare($sql);
