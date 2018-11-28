@@ -30,7 +30,7 @@ switch ($controller) {
         break; 
 
     default:
-        require_once("controllers/home_controller.php");
+        require_once("controllers/films_controller.php");
         break;
 }
 

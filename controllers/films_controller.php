@@ -66,7 +66,7 @@ function showListByOneRealisateur(){
     
 
     $template = $twig->load('film.html.twig');
-    echo $template->render( array('title'=>'Tous les Films', 'films' => $films, 'baseurl' => $baseurl) );
+    echo $template->render( array('title'=>'Tous les Films par Réalisateurs', 'films' => $films, 'baseurl' => $baseurl) );
 
 }
 
@@ -76,7 +76,7 @@ function showListByOneActeur(){
     
 
     $template = $twig->load('film.html.twig');
-    echo $template->render( array('title'=>'Tous les Films', 'films' => $films, 'baseurl' => $baseurl) );
+    echo $template->render( array('title'=>'Tous les Films par Acteurs', 'films' => $films, 'baseurl' => $baseurl) );
 
 }
 
@@ -86,7 +86,7 @@ function showListAnnee(){
     
 
     $template = $twig->load('film.html.twig');
-    echo $template->render( array('title'=>'Tous les Films', 'films' => $films, 'baseurl' => $baseurl) );
+    echo $template->render( array('title'=>'Tous les Films par Année', 'films' => $films, 'baseurl' => $baseurl) );
 
 }
 
