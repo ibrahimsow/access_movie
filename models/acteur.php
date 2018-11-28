@@ -2,9 +2,9 @@
     require'models/connection_bdd.php';
 
 
-    function listeannee(){
+    function listeacteur(){
         global $basedonne;
-        $requete = $basedonne->prepare("SELECT films.annee FROM films GROUP BY annee ORDER BY annee DESC");
+        $requete = $basedonne->prepare("SELECT acteur.acteur, acteur.id FROM acteur");
 
         $requete->execute();
     

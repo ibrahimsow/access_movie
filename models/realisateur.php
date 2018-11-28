@@ -2,9 +2,9 @@
     require'models/connection_bdd.php';
 
 
-    function liste(){
+    function listerealisateur(){
         global $basedonne;
-        $requete = $basedonne->prepare("SELECT realisateur.realisateur FROM realisateur");
+        $requete = $basedonne->prepare("SELECT realisateur.realisateur, realisateur.id FROM realisateur");
 
         $requete->execute();
     

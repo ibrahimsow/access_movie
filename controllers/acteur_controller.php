@@ -12,27 +12,28 @@ $twig = new Twig_Environment($loader, array(
 
 
 
-require_once('models/romance.php');
+require_once('models/acteur.php');
+require_once('models/film.php');
+
 
 
 switch ($action) {
     case 'list':
         showList();
         break;
-    
-    // default:
-    //     # code...
-    //     break;
 }
+
 
 
 
 
 function showList(){
     global $twig;
-    $result = liste();
+    $result = listeacteur();
+    
 
- 
-    $template = $twig->load('romance.html.twig');
-    echo $template->render(array('title'=>"Film de Romance",'romance' => $result));
+    $template = $twig->load('acteur.html.twig');
+    echo $template->render(array('title'=>'Tous les Acteurs','acteurs' => $result));
+
+
 }
