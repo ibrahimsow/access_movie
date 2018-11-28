@@ -1,5 +1,5 @@
 <?php
-    $basedonne = new PDO("mysql:host=127.0.0.1;dbname=annuaire; charset=utf8", "root", "online@2017");
+    require'models/connection_bdd.php';
 
 
     function liste(){
