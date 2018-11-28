@@ -9,10 +9,6 @@ $action=(count($requete) < 3)? "list": $requete[2];
 $id=(count($requete) < 4)? 0: (int)$requete[3];
 
 switch ($controller) {
-        case 'films':
-        require_once("controllers/films_controller.php");
-        break;
-
         case 'realisateur':
         require_once("controllers/realisateur_controller.php");
         break;
@@ -26,7 +22,7 @@ switch ($controller) {
         break;
 
     default:
-        require_once("controllers/home_controller.php");
+        require_once("controllers/films_controller.php");
         break;
 }
 
