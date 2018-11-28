@@ -1,11 +1,12 @@
-{% extends 'index.html.twig' %} 
+
+ {% extends 'index.html.twig' %} 
  
  {% block content %}
 
-    {% for acteur in acteur %}
+    {% for acteur in acteurs %}
     <section class="contenue_realisateur">
         <div>
-            <a href="#"><h1>{{acteur.acteur}}</h1></a>
+            <a href="films/acteur/{{acteur.id}}"><h1>{{acteur.acteur}}</h1></a>
             
         </div>
     </section>

@@ -1,8 +1,8 @@
 <?php
-    $basedonne = new PDO("mysql:host=127.0.0.1;dbname=annuaire_film; charset=utf8", "root", "online@2017");
+    require'models/connection_bdd.php';
 
 
-    function liste(){
+    function listeannee(){
         global $basedonne;
         $requete = $basedonne->prepare("SELECT films.annee FROM films GROUP BY annee ORDER BY annee DESC");
 
@@ -11,3 +11,4 @@
         return $requete->fetchAll(PDO::FETCH_ASSOC);
         
     }
+    

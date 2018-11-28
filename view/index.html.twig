@@ -4,66 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base href="{{baseurl}}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link  rel="stylesheet" type="text/css" href="style.css" />
     <title>ACCESS-MOVIE</title>
 </head>
-<body  class="d-flex flex-column align-items-center justify-content-center">
-
-<div class="container-fluid manav">
-          <nav id="home" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-              <!--<a class="navbar-brand" href="index.html"><i class="far fa-smile-wink"></i></a>-->
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="ml-1 mr-1 nav-item d-flex justify-content-center align-items-center">
-                      <a class="m-1 nav-link" href="./films">Tous les Films <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="ml-1 mr-1 nav-item  d-flex justify-content-center align-items-center">
-                      <a class="m-1 nav-link" href="./realisateur">Realisateurs</a>
+<body>
+    <section class="ma_page container-fluid ">
+      
+        <header class="container-fluid d-flex flex-column justify-content-center align-items-center" id="home">
+          <div class="container-fluid manav">
+            <nav id="home" class="navbar navbar-expand-lg navbar-dark bg-light fixed-top">
+                <!--<a class="navbar-brand" href="index.html"><i class="far fa-smile-wink"></i></a>-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="ml-1 mr-1 nav-item d-flex justify-content-center align-items-center">
+                        <a class="m-1 nav-link" href="./films">Tous les Films <span class="sr-only">(current)</span></a>
                     </li>
-                     <li class="ml-1 mr-1 nav-item  d-flex justify-content-center align-items-center">
-                      <a class="m-1 nav-link" href="./acteur">Acteurs</a>
-                    </li>
-                     <li class="ml-1 mr-1 nav-item  d-flex justify-content-center align-items-center">
-                      <a class="m-1 nav-link" href="./annee">Année</a>
-                    </li>
-                </ul>
-              </div>
+                    <li class="ml-1 mr-1 nav-item  d-flex justify-content-center align-items-center">
+                        <a class="m-1 nav-link" href="./realisateur">Realisateurs</a>
+                        </li>
+                        <li class="ml-1 mr-1 nav-item  d-flex justify-content-center align-items-center">
+                        <a class="m-1 nav-link" href="./acteur">Acteurs</a>
+                        </li>
+                        <li class="ml-1 mr-1 nav-item  d-flex justify-content-center align-items-center">
+                        <a class="m-1 nav-link" href="./annee">Année</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-          </div> 
-    <header class="d-flex flex-column justify-content-center align-items-center" id="home">
-        <div class="title">
-        <p class="icone"></p>
-            <h1 class="title" >Acc<span class="access">ess</span> <i class="icone fas fa-video"></i> Mo<span class="access">vie</span></h1>
-            <h2 class="text-center"> {{title}}</h2>
-        </div>
-        <hr>
-      </header>
-         <section class="affichage_genre row" >
-            <a href="./action">Action</a>
-            <a href="./animation">Animation</a>
-            <a href="./art_martiaux">Arts Martiaux</a>
-            <a href="./avanture">Aventure</a>
-            <a href="./biopic">Biopic</a>
-            <a href="./bollywood">Bollywood</a>
-            <a href="./drame">Drame</a>
-            <a href="./romance">Romance</a>
-            <a href="./famille">Famille</a>
-            <a href="./fiction">Science-fiction</a>
-
-        </section>
-        <section class="affichage" >
-             {% block content %}
-             {%  endblock %}
-             
-        </section>
-    
+        </div> 
+            <div class="title">
+            <p class="icone"></p>
+                <h1 class="title" >Acc<span class="access">ess</span> <i class="icone fas fa-video"></i> Mo<span class="access">vie</span></h1>
+                <h2 class="text-center"> {{title}}</h2>
+            </div>
+            <hr>
+        </header>
+                {% block menugenre %}
+                {% endblock %}
+            <section class="container-fluid affichage" >
+                {% block content %}
+                {%  endblock %}
+                
+            </section>
+    </section>
    
-
 
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -72,7 +62,7 @@
             crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
             crossorigin="anonymous"></script>
-        
+        <script src="app.js"></script> 
 </body>
 
 </html>

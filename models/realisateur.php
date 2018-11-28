@@ -1,10 +1,10 @@
 <?php
-    $basedonne = new PDO("mysql:host=127.0.0.1;dbname=annuaire_film; charset=utf8", "root", "online@2017");
+    require'models/connection_bdd.php';
 
 
-    function liste(){
+    function listerealisateur(){
         global $basedonne;
-        $requete = $basedonne->prepare("SELECT realisateur.realisateur FROM realisateur");
+        $requete = $basedonne->prepare("SELECT realisateur.realisateur, realisateur.id FROM realisateur");
 
         $requete->execute();
     
