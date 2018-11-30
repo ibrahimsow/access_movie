@@ -115,11 +115,21 @@ body{
             max-width: 60vw;
             color:#d4d4d4eb;
             margin-bottom: 10vh;
-            
+            .bande_annonce {
+                margin-top: -32px;
+                margin-bottom: 30px;
+                display: none;
+                    iframe{
+                    width: 100%;
+                    height: 530px;
+                }
+            }          
             .image{
                 img{
-                    height: 250px;
+                    height: 250px; 
                     width: auto;
+                    padding: 10px;
+                    background-color: #350000fa;
                 }
             }
             .contenue {
@@ -128,6 +138,14 @@ body{
                 margin-bottom: 2em;
                 box-shadow: 10px 2px 62px #ff202047;
                 background-color: #350000fa;
+                .showBandeAnnonce{
+                    display: block;
+                    cursor: grab;
+                }
+                .hideBandeAnnonce{
+                    display: none;
+                    cursor: grab;
+                }
                 h1{
                     font-size: 2rem;
                 }

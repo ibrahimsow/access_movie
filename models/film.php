@@ -4,7 +4,7 @@
 
     function liste(){
         global $basedonne;
-        $sql = "SELECT films.titre, films.description, films.annee, films.image_film
+        $sql = "SELECT films.titre, films.description, films.annee, films.image_film, films.bande_annonce
                 FROM `films`";
         
         $requete = $basedonne->prepare($sql);
@@ -14,7 +14,7 @@
 
     function showFilmsByGenre($idgenre){
         global $basedonne;
-        $sql = "SELECT films.titre, films.description, films.annee, films.image_film FROM (film_genre INNER JOIN films ON film_genre.film = films.id) INNER JOIN genre ON genre.id = film_genre.genre WHERE genre.id = :idgenre";
+        $sql = "SELECT films.titre, films.description, films.annee, films.image_film, films.bande_annonce FROM (film_genre INNER JOIN films ON film_genre.film = films.id) INNER JOIN genre ON genre.id = film_genre.genre WHERE genre.id = :idgenre";
         
         
         $requete = $basedonne->prepare($sql);
@@ -25,7 +25,7 @@
 
     function showFilmsByOneRealisateur($idrealisateur){
         global $basedonne;
-        $sql = "SELECT films.titre, films.description , films.annee ,films.image_film FROM (film_realisateur INNER JOIN films ON film_realisateur.film = films.id) INNER JOIN realisateur ON realisateur.id = film_realisateur.realisateur WHERE realisateur.id = :idrealisateur";
+        $sql = "SELECT films.titre, films.description , films.annee ,films.image_film, films.bande_annonce FROM (film_realisateur INNER JOIN films ON film_realisateur.film = films.id) INNER JOIN realisateur ON realisateur.id = film_realisateur.realisateur WHERE realisateur.id = :idrealisateur";
         
         
         $requete = $basedonne->prepare($sql);
@@ -36,7 +36,7 @@
 
     function showFilmsByOneActeur($idacteur){
         global $basedonne;
-        $sql = "SELECT films.titre, films.description , films.annee ,films.image_film FROM (film_acteur INNER JOIN films ON film_acteur.film = films.id) INNER JOIN acteur ON acteur.id = film_acteur.acteur WHERE acteur.id = :idacteur";
+        $sql = "SELECT films.titre, films.description , films.annee ,films.image_film, films.bande_annonce FROM (film_acteur INNER JOIN films ON film_acteur.film = films.id) INNER JOIN acteur ON acteur.id = film_acteur.acteur WHERE acteur.id = :idacteur";
         
         
         $requete = $basedonne->prepare($sql);
@@ -47,7 +47,7 @@
 
     function showAnnee($idannee){
         global $basedonne;
-        $sql = "SELECT films.titre, films.description, films.image_film, films.annee FROM films WHERE annee = :idannee ORDER BY annee";
+        $sql = "SELECT films.titre, films.description, films.image_film, films.annee, films.bande_annonce FROM films WHERE annee = :idannee ORDER BY annee";
         
         
         $requete = $basedonne->prepare($sql);
