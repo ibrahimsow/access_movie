@@ -71,15 +71,30 @@ body .ma_page {
     max-width: 60vw;
     color: #d4d4d4eb;
     margin-bottom: 10vh; }
+    body .ma_page .affichage .bande_annonce {
+      margin-top: -32px;
+      margin-bottom: 30px;
+      display: none; }
+      body .ma_page .affichage .bande_annonce iframe {
+        width: 100%;
+        height: 530px; }
     body .ma_page .affichage .image img {
       height: 250px;
-      width: auto; }
+      width: auto;
+      padding: 10px;
+      background-color: #350000fa; }
     body .ma_page .affichage .contenue {
       height: 250px;
       padding: 21px 45px;
       margin-bottom: 2em;
       box-shadow: 10px 2px 62px #ff202047;
       background-color: #350000fa; }
+      body .ma_page .affichage .contenue .showBandeAnnonce {
+        display: block;
+        cursor: grab; }
+      body .ma_page .affichage .contenue .hideBandeAnnonce {
+        display: none;
+        cursor: grab; }
       body .ma_page .affichage .contenue h1 {
         font-size: 2rem; }
     body .ma_page .affichage .contenue_realisateur {

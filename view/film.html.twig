@@ -5,7 +5,8 @@
 {% block content %}
 
     {% for film in films %}
-    <div class="d-flex flex-row"> 
+   
+    <div class="container-fluid d-flex flex-column flex-sm-column flex-md-column flex-lg-row"> 
         <div class="image">
             <img src="{{film.image_film}}" alt="img"> 
             </div>
@@ -19,10 +20,19 @@
             <div>
                 <p>{{film.annee}}</p>
             </div>
+            <div>
+                <p class="showBandeAnnonce">Voir la bande annonce</p>
+                <p class="hideBandeAnnonce">Cacher la bande annonce</p>
+            </div> 
+
         </section>
+    </div>
+       <div class="container-fluid bande_annonce">
+        <iframe width="560" height="315" src="{{film.bande_annonce}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     {% endfor %}
+  
 
 {%  endblock %}
 
