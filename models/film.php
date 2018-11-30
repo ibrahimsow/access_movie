@@ -4,8 +4,18 @@
 
     function liste(){
         global $basedonne;
-        $sql = "SELECT films.titre, films.description, films.annee, films.image_film
-                FROM `films`";
+        $sql = "SELECT films.titre,films.annee,films.description,films.image_film, 
+        GROUP_CONCAT(DISTINCT genre.type SEPARATOR ', ') AS genre,
+        GROUP_CONCAT(DISTINCT realisateur.realisateur SEPARATOR ', ') AS realisateur,
+        GROUP_CONCAT(DISTINCT acteur.acteur SEPARATOR ', ') AS acteur
+        FROM film_genre 
+        INNER JOIN films ON film_genre.film = films.id
+        INNER JOIN film_realisateur ON film_realisateur.film = films.id
+        INNER JOIN realisateur ON realisateur.id = film_realisateur.realisateur
+        INNER JOIN genre ON genre.id = film_genre.genre
+        INNER JOIN film_acteur ON film_acteur.film = films.id
+        INNER JOIN acteur ON acteur.id = film_acteur.acteur
+        GROUP BY films.titre";
         
         $requete = $basedonne->prepare($sql);
         $requete->execute();    
@@ -25,7 +35,19 @@
 
     function showFilmsByOneRealisateur($idrealisateur){
         global $basedonne;
-        $sql = "SELECT films.titre, films.description , films.annee ,films.image_film FROM (film_realisateur INNER JOIN films ON film_realisateur.film = films.id) INNER JOIN realisateur ON realisateur.id = film_realisateur.realisateur WHERE realisateur.id = :idrealisateur";
+        $sql = "SELECT films.titre,films.annee,films.description,films.image_film, 
+        GROUP_CONCAT(DISTINCT genre.type SEPARATOR ', ') AS genre,
+        GROUP_CONCAT(DISTINCT realisateur.realisateur SEPARATOR ', ') AS realisateur,
+        GROUP_CONCAT(DISTINCT acteur.acteur SEPARATOR ', ') AS acteur
+        FROM film_genre 
+        INNER JOIN films ON film_genre.film = films.id
+        INNER JOIN film_realisateur ON film_realisateur.film = films.id
+        INNER JOIN realisateur ON realisateur.id = film_realisateur.realisateur
+        INNER JOIN genre ON genre.id = film_genre.genre
+        INNER JOIN film_acteur ON film_acteur.film = films.id
+        INNER JOIN acteur ON acteur.id = film_acteur.acteur
+        WHERE realisateur.id = :idrealisateur
+        GROUP BY films.titre";
         
         
         $requete = $basedonne->prepare($sql);
@@ -36,7 +58,19 @@
 
     function showFilmsByOneActeur($idacteur){
         global $basedonne;
-        $sql = "SELECT films.titre, films.description , films.annee ,films.image_film FROM (film_acteur INNER JOIN films ON film_acteur.film = films.id) INNER JOIN acteur ON acteur.id = film_acteur.acteur WHERE acteur.id = :idacteur";
+        $sql = "SELECT films.titre,films.annee,films.description,films.image_film, 
+        GROUP_CONCAT(DISTINCT genre.type SEPARATOR ', ') AS genre,
+        GROUP_CONCAT(DISTINCT realisateur.realisateur SEPARATOR ', ') AS realisateur,
+        GROUP_CONCAT(DISTINCT acteur.acteur SEPARATOR ', ') AS acteur
+        FROM film_genre 
+        INNER JOIN films ON film_genre.film = films.id
+        INNER JOIN film_realisateur ON film_realisateur.film = films.id
+        INNER JOIN realisateur ON realisateur.id = film_realisateur.realisateur
+        INNER JOIN genre ON genre.id = film_genre.genre
+        INNER JOIN film_acteur ON film_acteur.film = films.id
+        INNER JOIN acteur ON acteur.id = film_acteur.acteur 
+        WHERE acteur.id = :idacteur
+        GROUP BY films.titre";
         
         
         $requete = $basedonne->prepare($sql);
@@ -47,7 +81,20 @@
 
     function showAnnee($idannee){
         global $basedonne;
-        $sql = "SELECT films.titre, films.description, films.image_film, films.annee FROM films WHERE annee = :idannee ORDER BY annee";
+        $sql = "SELECT films.titre,films.annee,films.description,films.image_film, 
+        GROUP_CONCAT(DISTINCT genre.type SEPARATOR ', ') AS genre,
+        GROUP_CONCAT(DISTINCT realisateur.realisateur SEPARATOR ', ') AS realisateur,
+        GROUP_CONCAT(DISTINCT acteur.acteur SEPARATOR ', ') AS acteur
+        FROM film_genre 
+        INNER JOIN films ON film_genre.film = films.id
+        INNER JOIN film_realisateur ON film_realisateur.film = films.id
+        INNER JOIN realisateur ON realisateur.id = film_realisateur.realisateur
+        INNER JOIN genre ON genre.id = film_genre.genre
+        INNER JOIN film_acteur ON film_acteur.film = films.id
+        INNER JOIN acteur ON acteur.id = film_acteur.acteur
+        WHERE annee = :idannee
+        GROUP BY films.titre 
+        ORDER BY annee";
         
         
         $requete = $basedonne->prepare($sql);
