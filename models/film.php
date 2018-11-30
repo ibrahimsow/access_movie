@@ -4,6 +4,7 @@
 
     function liste(){
         global $basedonne;
+
         $sql = "SELECT films.titre,films.annee,films.description,films.image_film, 
         GROUP_CONCAT(DISTINCT genre.type SEPARATOR ', ') AS genre,
         GROUP_CONCAT(DISTINCT realisateur.realisateur SEPARATOR ', ') AS realisateur,
@@ -24,8 +25,7 @@
 
     function showFilmsByGenre($idgenre){
         global $basedonne;
-        $sql = "SELECT films.titre, films.description, films.annee, films.image_film FROM (film_genre INNER JOIN films ON film_genre.film = films.id) INNER JOIN genre ON genre.id = film_genre.genre WHERE genre.id = :idgenre";
-        
+        $sql = "SELECT films.titre, films.description, films.annee, films.image_film, films.bande_annonce FROM (film_genre INNER JOIN films ON film_genre.film = films.id) INNER JOIN genre ON genre.id = film_genre.genre WHERE genre.id = :idgenre";
         
         $requete = $basedonne->prepare($sql);
         $requete -> bindParam(':idgenre', $idgenre, PDO::PARAM_INT);
@@ -35,6 +35,7 @@
 
     function showFilmsByOneRealisateur($idrealisateur){
         global $basedonne;
+
         $sql = "SELECT films.titre,films.annee,films.description,films.image_film, 
         GROUP_CONCAT(DISTINCT genre.type SEPARATOR ', ') AS genre,
         GROUP_CONCAT(DISTINCT realisateur.realisateur SEPARATOR ', ') AS realisateur,
@@ -49,7 +50,6 @@
         WHERE realisateur.id = :idrealisateur
         GROUP BY films.titre";
         
-        
         $requete = $basedonne->prepare($sql);
         $requete -> bindParam(':idrealisateur', $idrealisateur, PDO::PARAM_INT);
         $requete->execute();    
@@ -58,6 +58,7 @@
 
     function showFilmsByOneActeur($idacteur){
         global $basedonne;
+
         $sql = "SELECT films.titre,films.annee,films.description,films.image_film, 
         GROUP_CONCAT(DISTINCT genre.type SEPARATOR ', ') AS genre,
         GROUP_CONCAT(DISTINCT realisateur.realisateur SEPARATOR ', ') AS realisateur,
@@ -72,7 +73,6 @@
         WHERE acteur.id = :idacteur
         GROUP BY films.titre";
         
-        
         $requete = $basedonne->prepare($sql);
         $requete -> bindParam(':idacteur', $idacteur, PDO::PARAM_INT);
         $requete->execute();    
@@ -81,6 +81,7 @@
 
     function showAnnee($idannee){
         global $basedonne;
+
         $sql = "SELECT films.titre,films.annee,films.description,films.image_film, 
         GROUP_CONCAT(DISTINCT genre.type SEPARATOR ', ') AS genre,
         GROUP_CONCAT(DISTINCT realisateur.realisateur SEPARATOR ', ') AS realisateur,
@@ -95,7 +96,6 @@
         WHERE annee = :idannee
         GROUP BY films.titre 
         ORDER BY annee";
-        
         
         $requete = $basedonne->prepare($sql);
         $requete -> bindParam(':idannee', $idannee, PDO::PARAM_INT);
