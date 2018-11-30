@@ -43,7 +43,6 @@ function showList(){
     $films = liste();
     $genres = listeGenre();
     
-
     $template = $twig->load('film.html.twig');
     echo $template->render( array('title'=>'Tous les Films', 'films' => $films, 'genres' => $genres, 'baseurl' => $baseurl) );
 
