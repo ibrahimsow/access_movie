@@ -63,7 +63,7 @@ function showListByOneRealisateur(){
     global $twig, $id, $baseurl;
     $films = showFilmsByOneRealisateur($id);
     
-
+    
     $template = $twig->load('film.html.twig');
     echo $template->render( array('title'=>'Tous les Films', 'films' => $films, 'baseurl' => $baseurl) );
 

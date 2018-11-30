@@ -8,7 +8,6 @@ for (let i = 0; i < showTrailler.length; i++) {
 
 showTrailler[i].addEventListener("click", function(showTrail){
     bandeAnnonces[i].style.display = "block";
-    bandeAnnonces[i].style.transition = "all 10s";
     showTrailler[i].style.display = "none";
     hideTrailler[i].style.display = "block";
   })

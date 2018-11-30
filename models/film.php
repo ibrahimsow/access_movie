@@ -5,7 +5,7 @@
     function liste(){
         global $basedonne;
 
-        $sql = "SELECT films.titre,films.annee,films.description,films.image_film, 
+        $sql = "SELECT films.titre,films.annee,films.description,films.image_film, films.bande_annonce, 
         GROUP_CONCAT(DISTINCT genre.type SEPARATOR ', ') AS genre,
         GROUP_CONCAT(DISTINCT realisateur.realisateur SEPARATOR ', ') AS realisateur,
         GROUP_CONCAT(DISTINCT acteur.acteur SEPARATOR ', ') AS acteur
@@ -36,7 +36,7 @@
     function showFilmsByOneRealisateur($idrealisateur){
         global $basedonne;
 
-        $sql = "SELECT films.titre,films.annee,films.description,films.image_film, 
+        $sql = "SELECT films.titre,films.annee,films.description,films.image_film, films.bande_annonce,
         GROUP_CONCAT(DISTINCT genre.type SEPARATOR ', ') AS genre,
         GROUP_CONCAT(DISTINCT realisateur.realisateur SEPARATOR ', ') AS realisateur,
         GROUP_CONCAT(DISTINCT acteur.acteur SEPARATOR ', ') AS acteur
@@ -59,7 +59,7 @@
     function showFilmsByOneActeur($idacteur){
         global $basedonne;
 
-        $sql = "SELECT films.titre,films.annee,films.description,films.image_film, 
+        $sql = "SELECT films.titre,films.annee,films.description,films.image_film, films.bande_annonce,
         GROUP_CONCAT(DISTINCT genre.type SEPARATOR ', ') AS genre,
         GROUP_CONCAT(DISTINCT realisateur.realisateur SEPARATOR ', ') AS realisateur,
         GROUP_CONCAT(DISTINCT acteur.acteur SEPARATOR ', ') AS acteur
@@ -82,7 +82,7 @@
     function showAnnee($idannee){
         global $basedonne;
 
-        $sql = "SELECT films.titre,films.annee,films.description,films.image_film, 
+        $sql = "SELECT films.titre,films.annee,films.description,films.image_film, films.bande_annonce, 
         GROUP_CONCAT(DISTINCT genre.type SEPARATOR ', ') AS genre,
         GROUP_CONCAT(DISTINCT realisateur.realisateur SEPARATOR ', ') AS realisateur,
         GROUP_CONCAT(DISTINCT acteur.acteur SEPARATOR ', ') AS acteur
