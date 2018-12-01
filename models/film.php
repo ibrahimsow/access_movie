@@ -25,7 +25,19 @@
 
     function showFilmsByGenre($idgenre){
         global $basedonne;
-        $sql = "SELECT films.titre, films.description, films.annee, films.image_film, films.bande_annonce FROM (film_genre INNER JOIN films ON film_genre.film = films.id) INNER JOIN genre ON genre.id = film_genre.genre WHERE genre.id = :idgenre";
+        $sql = "SELECT films.titre,films.annee,films.description,films.image_film, films.bande_annonce,
+        GROUP_CONCAT(DISTINCT genre.type SEPARATOR ', ') AS genre,
+        GROUP_CONCAT(DISTINCT realisateur.realisateur SEPARATOR ', ') AS realisateur,
+        GROUP_CONCAT(DISTINCT acteur.acteur SEPARATOR ', ') AS acteur
+        FROM film_genre 
+        INNER JOIN films ON film_genre.film = films.id
+        INNER JOIN film_realisateur ON film_realisateur.film = films.id
+        INNER JOIN realisateur ON realisateur.id = film_realisateur.realisateur
+        INNER JOIN genre ON genre.id = film_genre.genre
+        INNER JOIN film_acteur ON film_acteur.film = films.id
+        INNER JOIN acteur ON acteur.id = film_acteur.acteur
+        WHERE genre.id = :idgenre
+        GROUP BY films.titre";
         
         $requete = $basedonne->prepare($sql);
         $requete -> bindParam(':idgenre', $idgenre, PDO::PARAM_INT);
