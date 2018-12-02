@@ -7,11 +7,11 @@
     {% for film in films %}
    
     <div class="container-fluid d-flex flex-column"> 
-        <div class="image col-12" style="background: url({{film.image_film}}); background-size: cover;
+        <div id="fiche" class="image col-12" style="background: url({{film.image_film}}); background-size: cover;
                 background-position: top;
                 height: 400px; margin:0;">
             </div>
-        <section class="contenu col-12">
+        <section  class="contenu col-12">
             <div>
                 <h2>{{film.titre}}</h2>
             </div>
@@ -35,13 +35,13 @@
                 <p>Synopsis : {{film.description}}</p>
             </div>
             <div>
-                <p class="showBandeAnnonce">Voir la bande annonce</p>
-                <p class="hideBandeAnnonce">Cacher la bande annonce</p>
+                <a href="#b_a"><p class="showBandeAnnonce">Voir la bande annonce</p></a>
+                <a href="#fiche"><p class="hideBandeAnnonce">Cacher la bande annonce</p></a>
             </div> 
 
         </section>
     </div>
-       <div class="container-fluid bande_annonce">
+       <div id="b_a"class="container-fluid bande_annonce">
         <iframe width="560" height="315" src="{{film.bande_annonce}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 

@@ -159,7 +159,6 @@ body{
             @media (max-width: 575px) {
               max-width: 95vw;
               margin-top: 5vh;
-
             }
             .bande_annonce {
                 margin-top: -32px;
@@ -195,6 +194,9 @@ body{
                 @media (max-width: 575px) {
                     height: auto;
                 }
+                a{
+                    text-decoration: none;
+                }
                 .showBandeAnnonce{
                     display: block;
                     cursor: grab;
@@ -227,7 +229,7 @@ body{
                 background-color: #350000fa;
                 width: 50vw;
                 &:hover{
-                    transform: scale(1.05); 
+                    transform: scale(1.03); 
                     transition: .4s;
                 }
                 @media (max-width: 575px) {
@@ -251,9 +253,15 @@ body{
                 margin-bottom: 2em;
                 box-shadow: 10px 2px 62px #ff202047;
                 background-color: #350000fa;
-                width: 40vw;
+                width: 30vw;
+                @media (max-width: 575px) {
+                   width: 60vw;
+                }
+                @media (min-width: 576px) and (max-width: 1199px) {
+                    width: 50vw;
+                }
                 &:hover{
-                    transform: scale(1.05); 
+                    transform: scale(1.03); 
                     transition: .4s;
                 }
                 a{
@@ -276,7 +284,7 @@ body{
                 background-color: #350000fa;
                 width: 30vw;
                 &:hover{
-                    transform: scale(1.05); 
+                    transform: scale(1.03); 
                     transition: .4s;
                 }
                 a{

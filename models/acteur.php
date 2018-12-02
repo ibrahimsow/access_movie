@@ -4,7 +4,7 @@
 
     function listeacteur(){
         global $basedonne;
-        $requete = $basedonne->prepare("SELECT acteur.acteur, acteur.id FROM acteur");
+        $requete = $basedonne->prepare("SELECT acteur.acteur, acteur.id, acteur.image_acteur FROM acteur");
 
         $requete->execute();
     

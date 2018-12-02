@@ -28,7 +28,7 @@ for (let j = 0; j < showTrailler.length; j++) {
 // transition sur la redirection de mon liens d'ancrage
 
 (function() {
-  var speed = 1200;
+  var speed = 600;
   var moving_frequency = 15; // Affects performance !
   var links = document.querySelectorAll("a"); // Active links
   var href;

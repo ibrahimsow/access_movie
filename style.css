@@ -141,6 +141,8 @@ body .ma_page {
       @media (max-width: 575px) {
         body .ma_page .affichage .contenu {
           height: auto; } }
+      body .ma_page .affichage .contenu a {
+        text-decoration: none; }
       body .ma_page .affichage .contenu .showBandeAnnonce {
         display: block;
         cursor: grab;
@@ -166,7 +168,7 @@ body .ma_page {
       background-color: #350000fa;
       width: 50vw; }
       body .ma_page .affichage .contenu_realisateur:hover {
-        transform: scale(1.05);
+        transform: scale(1.03);
         transition: .4s; }
       @media (max-width: 575px) {
         body .ma_page .affichage .contenu_realisateur {
@@ -185,9 +187,15 @@ body .ma_page {
       margin-bottom: 2em;
       box-shadow: 10px 2px 62px #ff202047;
       background-color: #350000fa;
-      width: 40vw; }
+      width: 30vw; }
+      @media (max-width: 575px) {
+        body .ma_page .affichage .contenu_acteur {
+          width: 60vw; } }
+      @media (min-width: 576px) and (max-width: 1199px) {
+        body .ma_page .affichage .contenu_acteur {
+          width: 50vw; } }
       body .ma_page .affichage .contenu_acteur:hover {
-        transform: scale(1.05);
+        transform: scale(1.03);
         transition: .4s; }
       body .ma_page .affichage .contenu_acteur a {
         text-decoration: none;
@@ -205,7 +213,7 @@ body .ma_page {
       background-color: #350000fa;
       width: 30vw; }
       body .ma_page .affichage .contenu_annee:hover {
-        transform: scale(1.05);
+        transform: scale(1.03);
         transition: .4s; }
       body .ma_page .affichage .contenu_annee a {
         text-decoration: none;
