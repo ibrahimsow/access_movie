@@ -38,13 +38,17 @@ body .ma_page {
         font-size: 2rem; } }
 @keyframes cam {
   0% {
-    transform: rotate(15deg); }
+    transform: rotate(15deg);
+  }
   25% {
-    transform: rotate(30deg); }
+    transform: rotate(30deg);
+  }
   50% {
-    transform: rotate(15deg); }
+    transform: rotate(15deg);
+  }
   75% {
-    transform: rotate(30deg); }
+    transform: rotate(30deg);
+  }
   100% {
     transform: rotate(15deg); } }
   body .ma_page header .title h1 {
