@@ -4,7 +4,7 @@
 
     function listerealisateur(){
         global $basedonne;
-        $requete = $basedonne->prepare("SELECT realisateur.realisateur, realisateur.id FROM realisateur");
+        $requete = $basedonne->prepare("SELECT realisateur.realisateur, realisateur.id, realisateur.image_realisateur FROM realisateur");
 
         $requete->execute();
     

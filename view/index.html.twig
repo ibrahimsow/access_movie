@@ -42,13 +42,15 @@
             <p class="icone"></p>
                 <h1 class="title d-flex flex-row" >Acc<span class="access">ess</span> <i class="icone fas fa-video"></i> Mo<span class="access">vie</span></h1>
                 <h2 class="text-center"> {{title}}</h2>
+                <a href="./realisateur"><h2 class="goback text-center"> {{back}}</h2></a>
+                
             </div>
             <hr>
         </header>
         <div class="goup"> </div>
                 {% block menugenre %}
                 {% endblock %}
-            <section class="container-fluid affichage" >
+            <section class="container-fluid affichage d-flex flex-column align-items-center justify-content-center" >
                 {% block content %}
                 {%  endblock %}
                 

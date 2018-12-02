@@ -4,12 +4,18 @@
  {% block content %}
 
     {% for realisateur in realisateurs %}
-    <section class="contenue_realisateur">
-        <div>
-            <a href="films/realisateur/{{realisateur.id}}"><h1 class="text-center">{{realisateur.realisateur}}</h1></a>
-            
-        </div>
-    </section>
+     
+          
+        <section class="contenue_realisateur">
+            <div>
+                <a href="films/realisateur/{{realisateur.id}}"><h1 class="text-center">{{realisateur.realisateur}}</h1></a>
+            </div>
+               <a href="films/realisateur/{{realisateur.id}}"><div class="image col-12" style="background: url({{realisateur.image_realisateur}}); background-size: cover;
+                    background-position: center;
+                    height: 400px; margin:0;">
+            </div></a>
+        </section>
+   
 
     {% endfor %}
  

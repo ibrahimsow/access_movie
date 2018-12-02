@@ -65,7 +65,7 @@ function showListByOneRealisateur(){
     
 
     $template = $twig->load('film.html.twig');
-    echo $template->render( array( 'films' => $films, 'baseurl' => $baseurl) );
+    echo $template->render( array( 'back'=>'Revenir vers tous les réalisateurs','films' => $films, 'baseurl' => $baseurl) );
 
 }
 
