@@ -1,6 +1,13 @@
 body .ma_page {
   background: linear-gradient(#7f0000, #540000);
   height: 100%; }
+  body .ma_page .goup {
+    position: fixed;
+    top: 90vh;
+    right: 5vw; }
+    body .ma_page .goup i {
+      font-size: 4rem;
+      color: #ffffffb5; }
   body .ma_page header .container-fluid {
     padding: 0;
     margin-right: auto;
@@ -126,47 +133,87 @@ body .ma_page {
         @media (max-width: 575px) {
           body .ma_page .affichage .image img {
             height: 291px; } }
-    body .ma_page .affichage .contenue {
+    body .ma_page .affichage .contenu {
       padding: 21px 45px;
       margin-bottom: 2em;
       box-shadow: 10px 2px 62px #ff202047;
       background-color: #350000fa; }
       @media (max-width: 575px) {
-        body .ma_page .affichage .contenue {
+        body .ma_page .affichage .contenu {
           height: auto; } }
-      body .ma_page .affichage .contenue .showBandeAnnonce {
+      body .ma_page .affichage .contenu .showBandeAnnonce {
         display: block;
-        cursor: grab; }
-        body .ma_page .affichage .contenue .showBandeAnnonce:hover {
-          transform: scale(1.2);
+        cursor: grab;
+        color: #85ddffb8;
+        font-weight: bold; }
+        body .ma_page .affichage .contenu .showBandeAnnonce:hover {
+          transform: scale(1.02);
           transition: .4s; }
-      body .ma_page .affichage .contenue .hideBandeAnnonce {
+      body .ma_page .affichage .contenu .hideBandeAnnonce {
         display: none;
-        cursor: grab; }
-        body .ma_page .affichage .contenue .hideBandeAnnonce:hover {
-          transform: scale(1.2);
+        cursor: grab;
+        color: #85ddffb8;
+        font-weight: bold; }
+        body .ma_page .affichage .contenu .hideBandeAnnonce:hover {
+          transform: scale(1.02);
           transition: .4s; }
-      body .ma_page .affichage .contenue h1 {
+      body .ma_page .affichage .contenu h1 {
         font-size: 2rem; }
-    body .ma_page .affichage .contenue_realisateur {
+    body .ma_page .affichage .contenu_realisateur {
       padding: 0px;
       margin-bottom: 2em;
       box-shadow: 10px 2px 62px #ff202047;
       background-color: #350000fa;
       width: 50vw; }
-      body .ma_page .affichage .contenue_realisateur:hover {
+      body .ma_page .affichage .contenu_realisateur:hover {
         transform: scale(1.05);
         transition: .4s; }
       @media (max-width: 575px) {
-        body .ma_page .affichage .contenue_realisateur {
+        body .ma_page .affichage .contenu_realisateur {
           width: 90vw; } }
-      body .ma_page .affichage .contenue_realisateur a {
+      body .ma_page .affichage .contenu_realisateur a {
         text-decoration: none;
         color: #ffffffb5; }
-      body .ma_page .affichage .contenue_realisateur h1 {
+      body .ma_page .affichage .contenu_realisateur h1 {
         font-size: 2rem;
         margin: 15px; }
-        body .ma_page .affichage .contenue_realisateur h1:hover {
+        body .ma_page .affichage .contenu_realisateur h1:hover {
+          transform: scale(1.2);
+          transition: .4s; }
+    body .ma_page .affichage .contenu_acteur {
+      padding: 0px;
+      margin-bottom: 2em;
+      box-shadow: 10px 2px 62px #ff202047;
+      background-color: #350000fa;
+      width: 40vw; }
+      body .ma_page .affichage .contenu_acteur:hover {
+        transform: scale(1.05);
+        transition: .4s; }
+      body .ma_page .affichage .contenu_acteur a {
+        text-decoration: none;
+        color: #ffffffb5; }
+      body .ma_page .affichage .contenu_acteur h1 {
+        font-size: 2rem;
+        margin: 15px; }
+        body .ma_page .affichage .contenu_acteur h1:hover {
+          transform: scale(1.2);
+          transition: .4s; }
+    body .ma_page .affichage .contenu_annee {
+      padding: 0px;
+      margin-bottom: 2em;
+      box-shadow: 10px 2px 62px #ff202047;
+      background-color: #350000fa;
+      width: 30vw; }
+      body .ma_page .affichage .contenu_annee:hover {
+        transform: scale(1.05);
+        transition: .4s; }
+      body .ma_page .affichage .contenu_annee a {
+        text-decoration: none;
+        color: #ffffffb5; }
+      body .ma_page .affichage .contenu_annee h1 {
+        font-size: 2rem;
+        margin: 15px; }
+        body .ma_page .affichage .contenu_annee h1:hover {
           transform: scale(1.2);
           transition: .4s; }
 

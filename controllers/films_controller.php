@@ -65,7 +65,7 @@ function showListByOneRealisateur(){
     
 
     $template = $twig->load('film.html.twig');
-    echo $template->render( array( 'back'=>'Revenir vers tous les réalisateurs','films' => $films, 'baseurl' => $baseurl) );
+    echo $template->render( array( 'backrealisateur'=>'Revenir vers tous les réalisateurs','films' => $films, 'baseurl' => $baseurl) );
 
 }
 
@@ -75,7 +75,7 @@ function showListByOneActeur(){
     
 
     $template = $twig->load('film.html.twig');
-    echo $template->render( array( 'films' => $films, 'baseurl' => $baseurl) );
+    echo $template->render( array('backacteur'=>'Revenir vers tous les acteurs', 'films' => $films, 'baseurl' => $baseurl) );
 
 }
 
@@ -85,7 +85,7 @@ function showListAnnee(){
     
 
     $template = $twig->load('film.html.twig');
-    echo $template->render( array( 'films' => $films, 'baseurl' => $baseurl) );
+    echo $template->render( array('backannee'=>'Revenir vers toutes les années', 'films' => $films, 'baseurl' => $baseurl) );
 
 }
 
