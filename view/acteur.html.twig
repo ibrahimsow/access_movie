@@ -3,7 +3,7 @@
  
  {% block content %}
 
-    {% for acteur in acteurs %}
+    {% for acteur in acteurs|sort %}
     <section class="contenu_acteur">
         <div>
             <a href="films/acteur/{{acteur.id}}"><h1 class="text-center">{{acteur.acteur}}</h1></a>
