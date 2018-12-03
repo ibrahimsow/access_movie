@@ -38,17 +38,13 @@ body .ma_page {
         font-size: 2rem; } }
 @keyframes cam {
   0% {
-    transform: rotate(15deg);
-  }
+    transform: rotate(15deg); }
   25% {
-    transform: rotate(30deg);
-  }
+    transform: rotate(30deg); }
   50% {
-    transform: rotate(15deg);
-  }
+    transform: rotate(15deg); }
   75% {
-    transform: rotate(30deg);
-  }
+    transform: rotate(30deg); }
   100% {
     transform: rotate(15deg); } }
   body .ma_page header .title h1 {
@@ -100,7 +96,8 @@ body .ma_page {
     margin: 0px 20px;
     color: #ffffffb5;
     text-decoration: none;
-    margin-bottom: 2em; }
+    margin-bottom: 2em;
+    transition: .4s; }
     @media (max-width: 575px) {
       body .ma_page .affichage_genre a {
         font-size: 2rem !important;
@@ -149,17 +146,19 @@ body .ma_page {
         text-decoration: none; }
       body .ma_page .affichage .contenu .showBandeAnnonce {
         display: block;
-        cursor: grab;
+        cursor: pointer;
         color: #85ddffb8;
-        font-weight: bold; }
+        font-weight: bold;
+        transition: .4s; }
         body .ma_page .affichage .contenu .showBandeAnnonce:hover {
           transform: scale(1.02);
           transition: .4s; }
       body .ma_page .affichage .contenu .hideBandeAnnonce {
         display: none;
-        cursor: grab;
+        cursor: pointer;
         color: #85ddffb8;
-        font-weight: bold; }
+        font-weight: bold;
+        transition: .4s; }
         body .ma_page .affichage .contenu .hideBandeAnnonce:hover {
           transform: scale(1.02);
           transition: .4s; }
