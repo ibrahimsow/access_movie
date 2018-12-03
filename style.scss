@@ -231,11 +231,13 @@ body{
                 }
                 a{
                     text-decoration: none;
+                    color: #4dcdffb8;
+                    font-weight: bold;
                 }
                 .showBandeAnnonce{
                     display: block;
                     cursor: grab;
-                    color: #85ddffb8;
+                    color: #4dcdffb8;
                     font-weight: bold;
                       &:hover{
                         transform: scale(1.02); 
@@ -245,7 +247,7 @@ body{
                 .hideBandeAnnonce{
                     display: none;
                     cursor: grab;
-                    color: #85ddffb8;
+                    color: #4dcdffb8;
                     font-weight: bold;
                       &:hover{
                         transform: scale(1.02); 
