@@ -122,7 +122,8 @@ body .ma_page {
     margin: 0px 20px;
     color: #ffffffb5;
     text-decoration: none;
-    margin-bottom: 2em; }
+    margin-bottom: 2em;
+    transition: .4s; }
     @media (max-width: 575px) {
       body .ma_page .affichage_genre a {
         font-size: 2rem !important;
@@ -185,17 +186,19 @@ body .ma_page {
         font-weight: bold; }
       body .ma_page .affichage .contenu .showBandeAnnonce {
         display: block;
-        cursor: grab;
-        color: #4dcdffb8;
-        font-weight: bold; }
+        cursor: pointer;
+        color: #85ddffb8;
+        font-weight: bold;
+        transition: .4s; }
         body .ma_page .affichage .contenu .showBandeAnnonce:hover {
           transform: scale(1.02);
           transition: .4s; }
       body .ma_page .affichage .contenu .hideBandeAnnonce {
         display: none;
-        cursor: grab;
-        color: #4dcdffb8;
-        font-weight: bold; }
+        cursor: pointer;
+        color: #85ddffb8;
+        font-weight: bold;
+        transition: .4s; }
         body .ma_page .affichage .contenu .hideBandeAnnonce:hover {
           transform: scale(1.02);
           transition: .4s; }

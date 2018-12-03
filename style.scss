@@ -167,6 +167,7 @@ body{
                 color:#ffffffb5;
                 text-decoration: none; 
                 margin-bottom: 2em;
+                transition: .4s;
                 @media (max-width: 575px) {
                     font-size: 2rem !important;
                     margin: 2px 20px;
@@ -240,9 +241,10 @@ body{
                 }
                 .showBandeAnnonce{
                     display: block;
-                    cursor: grab;
-                    color: #4dcdffb8;
+                    cursor: pointer;
+                    color: #85ddffb8;
                     font-weight: bold;
+                    transition: .4s;
                       &:hover{
                         transform: scale(1.02); 
                         transition: .4s;
@@ -250,9 +252,10 @@ body{
                 }
                 .hideBandeAnnonce{
                     display: none;
-                    cursor: grab;
-                    color: #4dcdffb8;
+                    cursor: pointer;
+                    color: #85ddffb8;
                     font-weight: bold;
+                    transition: .4s;
                       &:hover{
                         transform: scale(1.02); 
                         transition: .4s;
