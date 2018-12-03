@@ -183,31 +183,19 @@ body .ma_page {
         font-weight: bold; }
       body .ma_page .affichage .contenu .showBandeAnnonce {
         display: block;
-<<<<<<< HEAD
         cursor: pointer;
         color: #85ddffb8;
         font-weight: bold;
         transition: .4s; }
-=======
-        cursor: grab;
-        color: #4dcdffb8;
-        font-weight: bold; }
->>>>>>> ab49c763cba6180eea90df93fe5d9230be815f36
         body .ma_page .affichage .contenu .showBandeAnnonce:hover {
           transform: scale(1.02);
           transition: .4s; }
       body .ma_page .affichage .contenu .hideBandeAnnonce {
         display: none;
-<<<<<<< HEAD
         cursor: pointer;
         color: #85ddffb8;
         font-weight: bold;
         transition: .4s; }
-=======
-        cursor: grab;
-        color: #4dcdffb8;
-        font-weight: bold; }
->>>>>>> ab49c763cba6180eea90df93fe5d9230be815f36
         body .ma_page .affichage .contenu .hideBandeAnnonce:hover {
           transform: scale(1.02);
           transition: .4s; }
