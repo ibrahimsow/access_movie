@@ -5,9 +5,27 @@ body .ma_page {
     position: fixed;
     top: 90vh;
     right: 5vw; }
+    @media (max-width: 575px) {
+      body .ma_page .goup {
+        right: 3vw; } }
+    @media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
+      body .ma_page .goup {
+        right: 3vw; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      body .ma_page .goup {
+        right: 3vw; } }
     body .ma_page .goup i {
       font-size: 4rem;
       color: #ffffffb5; }
+      @media (max-width: 575px) {
+        body .ma_page .goup i {
+          font-size: 2rem; } }
+      @media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
+        body .ma_page .goup i {
+          font-size: 3rem; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        body .ma_page .goup i {
+          font-size: 3.5rem; } }
   body .ma_page header .container-fluid {
     padding: 0;
     margin-right: auto;
@@ -57,6 +75,14 @@ body .ma_page {
     @media (max-width: 575px) {
       body .ma_page header .title h1 {
         font-size: 2rem; } }
+    @media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
+      body .ma_page header .title h1 {
+        font-size: 3rem;
+        margin-top: 20vh; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      body .ma_page header .title h1 {
+        font-size: 3rem;
+        margin-top: 25vh; } }
     body .ma_page header .title h1 .access {
       color: #ffffffb5; }
   body .ma_page header .title h2 {
@@ -114,6 +140,15 @@ body .ma_page {
       body .ma_page .affichage {
         max-width: 95vw;
         margin-top: 5vh; } }
+    @media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
+      body .ma_page .affichage {
+        max-width: 85vw; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      body .ma_page .affichage {
+        max-width: 80vw; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      body .ma_page .affichage {
+        max-width: 80vw; } }
     body .ma_page .affichage .bande_annonce {
       margin-top: -32px;
       margin-bottom: 30px;
@@ -143,22 +178,36 @@ body .ma_page {
         body .ma_page .affichage .contenu {
           height: auto; } }
       body .ma_page .affichage .contenu a {
-        text-decoration: none; }
+        text-decoration: none;
+        color: #4dcdffb8;
+        font-weight: bold; }
       body .ma_page .affichage .contenu .showBandeAnnonce {
         display: block;
+<<<<<<< HEAD
         cursor: pointer;
         color: #85ddffb8;
         font-weight: bold;
         transition: .4s; }
+=======
+        cursor: grab;
+        color: #4dcdffb8;
+        font-weight: bold; }
+>>>>>>> ab49c763cba6180eea90df93fe5d9230be815f36
         body .ma_page .affichage .contenu .showBandeAnnonce:hover {
           transform: scale(1.02);
           transition: .4s; }
       body .ma_page .affichage .contenu .hideBandeAnnonce {
         display: none;
+<<<<<<< HEAD
         cursor: pointer;
         color: #85ddffb8;
         font-weight: bold;
         transition: .4s; }
+=======
+        cursor: grab;
+        color: #4dcdffb8;
+        font-weight: bold; }
+>>>>>>> ab49c763cba6180eea90df93fe5d9230be815f36
         body .ma_page .affichage .contenu .hideBandeAnnonce:hover {
           transform: scale(1.02);
           transition: .4s; }
