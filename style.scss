@@ -179,9 +179,11 @@ body{
             }
         }
         .affichage{
-            max-width: 65vw;
+            max-width: 80vw;
             color:#d4d4d4eb;
             margin-bottom: 10vh;
+            display: -webkit-flex;
+            flex-wrap: wrap;
             @media (max-width: 575px) {
               max-width: 95vw;
               margin-top: 5vh;
@@ -195,6 +197,7 @@ body{
              @media (min-width: 992px) and (max-width: 1199px) { 
                 max-width: 80vw; 
               }
+            
             .bande_annonce {
                 margin-top: -32px;
                 margin-bottom: 30px;
@@ -226,6 +229,7 @@ body{
                 margin-bottom: 2em;
                 box-shadow: 10px 2px 62px #ff202047;
                 background-color: #350000fa;
+                height: 500px;
                 @media (max-width: 575px) {
                     height: auto;
                 }
@@ -260,11 +264,13 @@ body{
             }
             
             .contenu_realisateur{
-                padding: 0px;
+                padding: 15px;
                 margin-bottom: 2em;
                 box-shadow: 10px 2px 62px #ff202047;
                 background-color: #350000fa;
-                width: 50vw;
+                width: 22vw;
+                flex: auto;
+                margin: 10px;
                 &:hover{
                     transform: scale(1.03); 
                     transition: .4s;
@@ -293,6 +299,8 @@ body{
                 box-shadow: 10px 2px 62px #ff202047;
                 background-color: #350000fa;
                 width: 30vw;
+                flex: auto;
+                margin: 10px;
                 @media (max-width: 575px) {
                    width: 60vw;
                 }

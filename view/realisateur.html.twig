@@ -1,7 +1,7 @@
 
  {% extends 'index.html.twig' %} 
  
- {% block content %}
+ {% block content_real_acteur %}
 
     {% for realisateur in realisateurs|sort %}
      
@@ -10,7 +10,8 @@
             <div>
                 <a href="films/realisateur/{{realisateur.id}}"><h1 class="text-center">{{realisateur.realisateur}}</h1></a>
             </div>
-               <a href="films/realisateur/{{realisateur.id}}"><div class="image col-12" style="background: url({{realisateur.image_realisateur}}); background-size: cover;
+               <a href="films/realisateur/{{realisateur.id}}"><div class="image col-12" style="background: url({{realisateur.image_realisateur}}); background-size: auto;
+    background-repeat: no-repeat;
                     background-position: center;
                     height: 400px; margin:0;">
             </div></a>
