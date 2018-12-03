@@ -7,9 +7,27 @@ body{
             position: fixed;
             top:90vh;
             right: 5vw;
+            @media (max-width: 575px) {
+                right: 3vw;
+            }
+            @media (min-width: 576px) and (max-width: 767px) and (orientation:landscape) {
+                right: 3vw;                      
+            }
+            @media (min-width: 768px) and (max-width: 991px) { 
+                right: 3vw; 
+             }
             i{
                 font-size: 4rem;
                 color: #ffffffb5;
+                @media (max-width: 575px) {
+                    font-size: 2rem;
+                }
+                @media (min-width: 576px) and (max-width: 767px) and (orientation:landscape) {
+                    font-size: 3rem;                    
+                }
+                @media (min-width: 768px) and (max-width: 991px) { 
+                    font-size: 3.5rem;  
+                 }
             }
         }
         header{
@@ -81,8 +99,15 @@ body{
                     text-shadow: 5px 29px 22px #00000030;
                     @media (max-width: 575px) {
                         font-size: 2rem;
-                     
                     }
+                    @media (min-width: 576px) and (max-width: 767px) and (orientation:landscape) {
+                        font-size: 3rem;       
+                        margin-top: 20vh;                      
+                    }
+                    @media (min-width: 768px) and (max-width: 991px) { 
+                        font-size: 3rem;       
+                        margin-top: 25vh;   
+                     }
                     .access{
                         color: #ffffffb5;
                     }
@@ -93,7 +118,8 @@ body{
                     text-shadow: 5px 9px 12px #00000030;
                 }
                 a{
-                    text-decoration: none;                    }
+                    text-decoration: none;                    
+                }
     
                     .goback{
                         color:#d4d4d4eb;
@@ -160,6 +186,15 @@ body{
               max-width: 95vw;
               margin-top: 5vh;
             }
+            @media (min-width: 576px) and (max-width: 767px) and (orientation:landscape) {
+                max-width: 85vw;                   
+            }
+            @media (min-width: 768px) and (max-width: 991px) { 
+                max-width: 80vw;  
+             }
+             @media (min-width: 992px) and (max-width: 1199px) { 
+                max-width: 80vw; 
+              }
             .bande_annonce {
                 margin-top: -32px;
                 margin-bottom: 30px;
