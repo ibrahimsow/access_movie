@@ -21,6 +21,10 @@ switch ($controller) {
         require_once("controllers/annee_controller.php");
         break;
 
+        case 'acteur':
+        require_once("controllers/acteur_controller.php");
+        break; 
+
     default:
         require_once("controllers/films_controller.php");
         break;
