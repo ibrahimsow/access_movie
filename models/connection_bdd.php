@@ -1,4 +1,3 @@
 <?php
-$basedonne = new PDO("mysql:host=127.0.0.1;dbname=annuaire_film; charset=utf8", "root", "online@2017");
-$baseurl = "http://localhost/access_movie/";
-?>
+$basedonne = new PDO("mysql:host=localhost;dbname=redhab_annuaire_film; charset=utf8", "redhab", "vSDuyK1i0AjB3A=="
+$baseurl = "https://redhab.promo-23.codeur.online/access_movie/"
