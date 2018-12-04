@@ -13,16 +13,18 @@ showTrailler[i].addEventListener("click", function(showTrail){
     hideTrailler[i].style.display = "block";
     setTimeout(() => {
         bandeAnnonces[i].style.opacity= 1.0;
-    }, 100)
+    }, 200)
   })
 }
 
 for (let j = 0; j < showTrailler.length; j++) {
   hideTrailler[j].addEventListener("click", function(hideTrail){
     bandeAnnonces[j].style.display = "none";
-    bandeAnnonces[j].style.opacity= 0.0;
     showTrailler[j].style.display = "block";
     hideTrailler[j].style.display = "none";
+    setTimeout(() => {
+        bandeAnnonces[j].style.opacity= 0.0;
+    }, 200)
   })
 }
 
