@@ -12,3 +12,12 @@
         
     }
     
+    function anneeById($id){
+        global $basedonne;
+        $requete = $basedonne->prepare("SELECT films.annee FROM films WHERE films.annee=:id GROUP BY annee");
+        $requete -> bindParam(":id", $id, PDO::PARAM_INT);
+        $requete->execute();
+    
+        return $requete->fetch(PDO::FETCH_ASSOC);
+        
+    }

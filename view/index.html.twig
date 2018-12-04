@@ -46,10 +46,13 @@
             <div class="title">
             <p class="icone"></p>
                 <h1 class="title d-flex flex-row" >Acc<span class="access">ess</span> <i class="icone fas fa-video"></i> Mo<span class="access">vie</span></h1>
-                <h2 class="text-center"> {{title}}</h2>
-                <a href="./realisateur"><h2 class="goback text-center"> {{backrealisateur}}</h2></a>
-                <a href="./acteur"><h2 class="goback text-center"> {{backacteur}}</h2></a>
-                <a href="./annee"><h2 class="goback text-center"> {{backannee}}</h2></a>
+                <h2 class="text-center">{{title}}</h2>
+                <a href="./realisateur"><p class="text-center return_style">{{returnreal| raw}}</p></a>
+                <h2 class="showdata text-center">{{showrealisateur}}</h2>
+                <a href="./acteur"><p class="text-center return_style">{{returnacteur| raw}}</p></a>
+                <h2 class="showdata text-center">{{showacteur}}</h2>
+                <a href="./annee"><p class="text-center return_style">{{returnannee| raw}}</p></a>
+                <h2 class="showdata text-center">{{showannee}}</h2>
                 
             </div>
             <hr>

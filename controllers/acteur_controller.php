@@ -28,8 +28,9 @@ switch ($action) {
 
 
 function showList(){
-    global $twig;
+    global $twig, $id;
     $result = listeacteur();
+    
     
 
     $template = $twig->load('acteur.html.twig');
