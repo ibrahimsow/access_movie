@@ -19,12 +19,14 @@ showTrailler[i].addEventListener("click", function(showTrail){
 
 for (let j = 0; j < showTrailler.length; j++) {
   hideTrailler[j].addEventListener("click", function(hideTrail){
-    bandeAnnonces[j].style.display = "none";
-    showTrailler[j].style.display = "block";
-    hideTrailler[j].style.display = "none";
+    bandeAnnonces[j].style.opacity= 0.0;
     setTimeout(() => {
-        bandeAnnonces[j].style.opacity= 0.0;
+        bandeAnnonces[j].style.display = "none";
+        showTrailler[j].style.display = "block";
+        hideTrailler[j].style.display = "none";
     }, 200)
+   
+  
   })
 }
 

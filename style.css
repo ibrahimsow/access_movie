@@ -270,6 +270,7 @@ body .ma_page {
       body .ma_page .affichage {
         max-width: 80vw; } }
     body .ma_page .affichage .bande_annonce {
+      opacity: 0.0;
       margin-top: -32px;
       margin-bottom: 30px;
       display: none;
