@@ -7,25 +7,19 @@ body .ma_page {
     right: 5vw; }
     @media (max-width: 575px) {
       body .ma_page .goup {
-        right: 1vw; } }
-    @media (min-width: 576px) and (max-width: 767px) and (orientation: portrait) {
-      body .ma_page .goup {
-        right: 2vw; } }
+        right: 3vw; } }
     @media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
       body .ma_page .goup {
-        right: 1vw; } }
+        right: 3vw; } }
     @media (min-width: 768px) and (max-width: 991px) {
       body .ma_page .goup {
-        right: 2vw; } }
+        right: 3vw; } }
     body .ma_page .goup i {
       font-size: 4rem;
       color: #ffffffb5; }
       @media (max-width: 575px) {
         body .ma_page .goup i {
-          font-size: 2.3rem; } }
-      @media (min-width: 576px) and (max-width: 767px) and (orientation: portrait) {
-        body .ma_page .goup i {
-          font-size: 3rem; } }
+          font-size: 2rem; } }
       @media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
         body .ma_page .goup i {
           font-size: 3rem; } }
@@ -81,51 +75,40 @@ body .ma_page {
     @media (max-width: 575px) {
       body .ma_page header .title h1 {
         font-size: 2rem; } }
-    @media (min-width: 576px) and (max-width: 767px) and (orientation: portrait) {
-      body .ma_page header .title h1 {
-        font-size: 4rem;
-        margin-top: 20vh; } }
     @media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
       body .ma_page header .title h1 {
         font-size: 3rem;
         margin-top: 20vh; } }
     @media (min-width: 768px) and (max-width: 991px) {
       body .ma_page header .title h1 {
-        font-size: 5rem;
-        margin-top: 12vh; } }
+        font-size: 3rem;
+        margin-top: 25vh; } }
     body .ma_page header .title h1 .access {
       color: #ffffffb5; }
   body .ma_page header .title h2 {
     color: #d4d4d4eb;
     margin: 5vh;
-    text-shadow: 5px 9px 12px #00000030;
-    font-size: 2rem; }
-    @media (max-width: 575px) {
-      body .ma_page header .title h2 {
-        margin: 0vh;
-        font-size: 25px; } }
-    @media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
-      body .ma_page header .title h2 {
-        margin: 0vh;
-        font-size: 35px; } }
-    @media (min-width: 768px) and (max-width: 991px) {
-      body .ma_page header .title h2 {
-        margin: 0vh;
-        font-size: 45px; } }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      body .ma_page header .title h2 {
-        font-size: 4rem; } }
+    text-shadow: 5px 9px 12px #00000030; }
   body .ma_page header .title a {
     text-decoration: none; }
-  body .ma_page header .title .goback {
+  body .ma_page header .title .fa-arrow-circle-left {
+    color: rgba(77, 205, 255, 0.72);
+    font-size: 1.1rem; }
+    body .ma_page header .title .fa-arrow-circle-left:hover {
+      cursor: pointer; }
+  body .ma_page header .title .return_style {
+    color: rgba(77, 205, 255, 0.72);
+    font-size: 1.1rem;
+    font-weight: bold; }
+    body .ma_page header .title .return_style:hover {
+      cursor: pointer;
+      transform: scale(1.02);
+      transition: .4s; }
+  body .ma_page header .title .showdata {
     color: #d4d4d4eb;
     font-size: 1.5rem;
     margin: 5vh;
     text-shadow: 5px 9px 12px #00000030; }
-    body .ma_page header .title .goback:hover {
-      transform: scale(1.2);
-      transition: .4s;
-      text-decoration: none; }
   body .ma_page header hr {
     display: block;
     margin-top: 0.5em;
@@ -140,32 +123,11 @@ body .ma_page {
       body .ma_page header hr {
         width: 40vw;
         margin-bottom: 1em; } }
-    @media (min-width: 576px) and (max-width: 767px) and (orientation: portrait) {
-      body .ma_page header hr {
-        width: 40vw;
-        margin-bottom: 1em; } }
-    @media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
-      body .ma_page header hr {
-        width: 40vw;
-        margin-bottom: 0em; } }
-    @media (min-width: 768px) and (max-width: 991px) {
-      body .ma_page header hr {
-        width: 40vw;
-        margin-bottom: 1em; } }
   @media (max-width: 575px) {
     body .ma_page .affichage_genre {
-      margin: 0;
-      display: none !important; } }
-  @media (min-width: 576px) and (max-width: 767px) {
-    body .ma_page .affichage_genre {
-      margin: 0;
-      display: none !important; } }
-  @media (min-width: 768px) and (max-width: 991px) {
-    body .ma_page .affichage_genre {
-      margin: 0;
-      display: none !important; } }
+      margin: 0; } }
   body .ma_page .affichage_genre a {
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
     margin: 0px 20px;
     color: #ffffffb5;
     text-decoration: none;
@@ -179,68 +141,6 @@ body .ma_page {
       color: black;
       transform: scale(1.2);
       transition: .4s; }
-  body .ma_page .affichage_genre_mobile {
-    display: none !important;
-    margin: 1em 0em; }
-    @media (max-width: 575px) {
-      body .ma_page .affichage_genre_mobile {
-        margin: 1em 0em;
-        display: block !important; } }
-    @media (min-width: 576px) and (max-width: 767px) {
-      body .ma_page .affichage_genre_mobile {
-        margin: 1.5em 0em;
-        display: block !important; } }
-    @media (min-width: 768px) and (max-width: 991px) {
-      body .ma_page .affichage_genre_mobile {
-        margin: 1.5em 0em;
-        display: block !important; } }
-    body .ma_page .affichage_genre_mobile .btn-secondary {
-      color: #ffffffab;
-      background-color: #370003d4;
-      border-color: #69696963;
-      padding: 10px;
-      width: 100%;
-      font-weight: 900; }
-      @media (max-width: 575px) {
-        body .ma_page .affichage_genre_mobile .btn-secondary {
-          font-size: 15px; } }
-      @media (min-width: 576px) and (max-width: 767px) {
-        body .ma_page .affichage_genre_mobile .btn-secondary {
-          font-size: 25px; } }
-      @media (min-width: 768px) and (max-width: 991px) {
-        body .ma_page .affichage_genre_mobile .btn-secondary {
-          font-size: 28px; } }
-    body .ma_page .affichage_genre_mobile .dropdown-menu {
-      width: 100% !important;
-      background-color: #000000c9;
-      transform: translate3d(0px, 44px, 0px) !important;
-      border: solid 2px #171717; }
-      @media (min-width: 576px) and (max-width: 767px) {
-        body .ma_page .affichage_genre_mobile .dropdown-menu {
-          transform: translate3d(0px, 57px, 0px) !important; } }
-      @media (min-width: 768px) and (max-width: 991px) {
-        body .ma_page .affichage_genre_mobile .dropdown-menu {
-          transform: translate3d(0px, 63px, 0px) !important; } }
-      body .ma_page .affichage_genre_mobile .dropdown-menu a {
-        font-size: 1.5rem !important;
-        margin: 8px 0px;
-        color: #cecece;
-        text-decoration: none;
-        transition: .4s;
-        display: flex;
-        justify-content: center; }
-        @media (min-width: 576px) and (max-width: 767px) {
-          body .ma_page .affichage_genre_mobile .dropdown-menu a {
-            font-size: 1.8rem !important;
-            margin: 10px; } }
-        @media (min-width: 768px) and (max-width: 991px) {
-          body .ma_page .affichage_genre_mobile .dropdown-menu a {
-            font-size: 1.8rem !important;
-            margin: 10px; } }
-        body .ma_page .affichage_genre_mobile .dropdown-menu a:hover {
-          color: black;
-          transform: scale(1.2);
-          transition: .4s; }
   body .ma_page .affichage {
     max-width: 80vw;
     color: #d4d4d4eb;
@@ -251,9 +151,6 @@ body .ma_page {
       body .ma_page .affichage {
         max-width: 95vw;
         margin-top: 5vh; } }
-    @media (min-width: 576px) and (max-width: 767px) and (orientation: portrait) {
-      body .ma_page .affichage {
-        max-width: 90vw; } }
     @media (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
       body .ma_page .affichage {
         max-width: 85vw; } }
@@ -372,8 +269,7 @@ body .ma_page {
       margin-bottom: 2em;
       box-shadow: 10px 2px 62px #ff202047;
       background-color: #350000fa;
-      width: 30vw;
-      margin: 50px 10px; }
+      width: 30vw; }
       body .ma_page .affichage .contenu_annee:hover {
         transform: scale(1.03);
         transition: .4s; }
